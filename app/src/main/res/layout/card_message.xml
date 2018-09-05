@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:id="@+id/message_container"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/bubble_container"
+        android:background="@drawable/bubble_background">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            fresco:roundedCornerRadius="50dp"
+            android:padding="2dp"
+            android:id="@+id/media_view"/>
+        <com.vanniktech.emoji.EmojiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, I am a message"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:emojiSize="24sp"
+            android:id="@+id/message_textview"
+            android:padding="10dp"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/04/2018 23:12"
+        android:id="@+id/date_textview"
+        android:padding="2dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="12sp" />
+
+
+
+</LinearLayout>
